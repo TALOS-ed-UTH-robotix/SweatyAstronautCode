@@ -28,10 +28,10 @@ while True:
     swf.display_start()
     no_astro=True#False
     while no_astro:
-        # keep doing this until we find an astronaut, then restart this loop 
+        # keep doing this until we find an astronaut, then restart this loop
         swf.display_measuring()
         measured=swf.regular_measuring()
-        
+
         if swf.sweaty_check(measured,mean_values,4): # check for rise in humidity above mean
             swf.write_file(' Possible astronaut')
             swf.display_are_you_there()
@@ -64,12 +64,12 @@ while True:
                             times=times+1 # wait for longer this time through loop
                         else:
                             minute=minute+1 # humidity high and no sign of astronaut - keep waiting but increment counter
-                            
+
                             saf.sleep_display(10)
                     if minute==10: # if we've been through the loop 10 times, give up and re-measure baseline
                         return_to_normal=True
                         no_astro=False
                         baseline_not_finished=True
-                        
-        
-        
+
+
+

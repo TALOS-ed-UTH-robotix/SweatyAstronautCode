@@ -1039,7 +1039,7 @@ ALFIE = [
 animations=[AMYH,EPICDAN,EMILY,THEAMAZINGHARRY,FREYA,PETEREUBEN,RICHARD,ALFIE,OZZY,AARON,BRILLJAS]
 def load_start_animations():
     #written by jasper
-    
+
     for x in range(len(animations)):
         length_ani=len(animations[x])
         if length_ani>25:
@@ -1052,9 +1052,9 @@ def load_start_animations():
         for t in range(length_ani):
             ap.set_pixels(animations[x][t])
             time.sleep(length_time)
-    
-    
-#load_start_animations()   
+
+
+#load_start_animations()
 def sleep_display(breaks):
     #written by Oz+Jas
     length_list=len(animations)
@@ -1064,7 +1064,7 @@ def sleep_display(breaks):
     for t in range(len(animations[random_num])):
             ap.set_pixels(animations[random_num][t])
             time.sleep(breaks2)
-    
-#sleep_display(10)    
-          
-    
+
+#sleep_display(10)
+
+
